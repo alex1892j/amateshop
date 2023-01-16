@@ -1,0 +1,32 @@
+//footer
+@use '_commons' as c;
+
+
+#footer{
+    grid-area: footer ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: 'Barlow', sans-serif;
+    padding-top: 8%; 
+}
+
+#footer nav{
+    width: 90%;
+    background-color: #4d4d4d;
+    margin: 10px;     
+}
+
+
+
+#footer nav ul li{
+    font-weight: bold;
+    display: flex;
+    justify-content:space-evenly ;
+}
+
+#footer nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}

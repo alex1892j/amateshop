@@ -1,0 +1,194 @@
+//contenido
+@use '_commons' as c;
+
+
+#contenedor{
+    width: 100%;
+    height: 100vh;
+}
+.logo{
+    width: 100px;
+    
+}
+    
+#inicio{
+    grid-area: inicio;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#carrucel{
+    grid-area: carrucel;
+}
+
+@media only screen and (min-width: 300px) {
+
+    #alfa {
+        grid-area: alfa;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        font-family: 'Barlow', sans-serif;
+        padding-top: 5%;
+
+        .home {
+
+            width: c.$ancho-total;
+            height: auto;
+            border: double 5px c.$color-1 ;
+
+            .home-1 {
+                text-align: center;
+                margin: 5px;
+            }
+
+
+
+        }
+
+        .condominio {
+
+
+            width: c.$ancho-total;
+            text-align: center;
+            margin: calc(c.$margen + 10px);
+
+
+            .casa-1 {
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: c.$ancho-total;
+                margin: c.$margen;
+                border-top: double 5px c.$color-1 ;
+
+
+
+            }
+
+            .casa-2 {
+                width: calc(c.$ancho-total - 40%);
+                margin: c.$margen;
+
+                background-color: c.$color-2;
+
+            }
+
+            .casa-3 {
+                width: calc(c.$ancho-total + 10%);
+
+
+            }
+
+            .casa-4 {
+
+                width: calc(c.$ancho-total - 20%);
+
+            }
+
+            .casa-5 {
+
+                width: calc(c.$ancho-total + 10%);
+
+            }
+
+        }
+
+
+
+    }
+
+
+
+    #bravo {
+        grid-area: bravo;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        font-family: 'Barlow', sans-serif;
+        padding-top: 5%;
+    }
+
+    #mega {
+        grid-area: mega;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        font-family: 'Barlow', sans-serif;
+        padding-top: 5%;
+    }
+
+
+    #charli {
+        grid-area: charli;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        font-family: 'Barlow', sans-serif;
+        padding-top: 5%;
+    }
+
+
+    .encabezado {
+
+        width: c.$ancho-total;
+        height: auto;
+        border: double 5px c.$color-1 ;
+        text-align: center;
+        margin: 5px;
+
+
+    }
+
+    .caja-principal {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: c.$ancho-total;
+        text-align: center;
+        gap: 20px;
+        margin: 20px;
+
+        .img-1 {
+            width: calc(c.$ancho-total - 10%);
+
+        }
+
+        .img-2 {
+
+            width: calc(c.$ancho-total - 10%);
+
+        }
+
+        .img-3 {
+            width: calc(c.$ancho-total - 10%);
+
+        }
+    }
+
+}
+
+.subarticulo {
+    text-align: center;
+    width: c.$ancho-total;
+    margin: 20px;
+}
+
+.img {
+
+    width: c.$ancho-total ;
+    justify-content: center;
+
+}

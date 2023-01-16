@@ -1,0 +1,138 @@
+//contenido-destok
+
+@use '_commons' as c;
+
+@media only screen and (min-width: 850px) {
+    #inicio {
+        grid-area: inicio;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+
+
+    #alfa {
+        grid-area: alfa;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    #bravo {
+        grid-area: bravo;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    #mega {
+        grid-area: mega;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        font-family: 'Barlow', sans-serif;
+    }
+
+
+    #charli {
+        grid-area: charli;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        font-family: 'Barlow', sans-serif;
+    }
+
+
+    .condominio {
+        display: flex;
+        flex-direction: row;
+        width: calc( c.$ancho-total / 2 ) ;
+        text-align: center;
+        margin: calc(c.$margen + 10px);
+       
+        .casa-1 {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: c.$ancho-total;
+            margin: c.$margen;
+            
+            
+
+
+
+        }
+        
+        
+    }
+
+    .encabezado{
+        display: flex;
+        flex-direction: column;
+    
+        width: calc(c.$ancho-total - 30% );
+    
+        .titulo-encabezado{
+            background: c.$color-3;
+    
+        
+        }
+    
+        .parr-encabezado{
+            text-align: center;
+        
+        }
+    }
+    
+    .caja-principal{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        margin-top: 20px;
+        
+    
+        .img-1{
+            width: 90%;
+        }
+    
+        .img-2{
+            width: 90%;
+        }
+    
+        .img-3{
+            width: 90%;
+    
+        }
+    
+    
+       
+    
+       
+    
+    }
+
+}
+
+
+
+
+
+
+
+    
+
+
+
+

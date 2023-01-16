@@ -1,133 +1,170 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amate shop</title>
-   
+    <title>AmateShop</title>
+    <link rel="stylesheet" href="estilos/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
     <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css">
-    <link
-    rel="stylesheet"
-  
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <enlace rel="preconectar" href="https://fonts.googleapis.com">
     <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
     <enlace href="https: //fonts.googleapis.com/css2? family= Barlow & display=swap" rel="hoja de estilo">
+  
 </head>
-<body>
-    <div id="contenedor">
-           
-        <header id="inicio" class="animate__animated animate__zoomIn" >
-        
-            
-            <div>
-                <h1><img class="logo" src="imagen/portada.png" alt="Amate shop"></h1>
-        
+<body id="contenedor" >
+
+
+
+    <header >
+
+    
+
+        <nav id="inicio" class="navbar navbar-expand-lg bg- animate__animated animate__fadeInDown sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logo" src="img/portada.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end fixed-top navbar-nav pe-3 offcanvas offcanvas-end  menu" id="navbarNavDropdown">
+                <div class="collapse navbar-collapse justify-content-end fixed-top navbar-nav pe-3 offcanvas menu" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="look.html">look</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tips moda.html">tips moda</a>
+                        </li> <li class="nav-item">
+                            <a class="nav-link" href="mi carrito.html">mi carrito</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="coleccion.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                coleccion
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="coleccion.html">verano</a></li>
+                                <li><a class="dropdown-item" href="coleccion.html">otoño</a></li>
+                                <li><a class="dropdown-item" href="coleccion.html">primavera</a></li>
+                                <li><a class="dropdown-item" href="coleccion.html">invierno</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            
+        </nav>
 
-        
-        <nav class="menu">
 
-                <ul>
-        
-                    <li>
-                        <a href="index.html"  > home</a>
-                    </li>
-                    <li>
-                        <a href="look.html">look</a>
-                    </li>
-                    <li>
-                        <a href="tips de moda.html">tips de moda</a>
-                    </li>
-                    <li>
-                        <a href="tienda.html">mi carrito</a>
-                    </li>
-                    <li>
-                        <a href="coleccion.html"> coleccion</a>
 
-                        <ul>
-                        <li>
-                            <a href="coleccion.html"> verano</a>
-                        </li>
-
-                        <li>
-                            <a href="coleccion.html"> invierno</a>
-                        </li> 
-                        
-                        <li>
-                            <a href="coleccion.html"> otoño</a>
-                        </li>
-
-                        <li>
-                            <a href="coleccion.html"> primavera</a>
-                        </li>
-                        </ul>
-                    </li>
-                    
-        
-                </ul>
-        
-            </nav> 
-           
-
-            <main>
-                <p><img class="img" src="cabezera.png" alt="img"></p>
-            </main>
-        
-        </header>
-        
         
        
+    </header>
 
-        <section id="alfa">
-            <article class="nro1">
 
-                <p class="nro1__nor2__nro3"> Ámate Shop es una marca de ropa auténtica con una personalidad diferente y transparente, la cual transmite toda la seguridad y comodidad a quienes usan las prendas. Dedicamos la mayor parte de nuestro tiempo a reflejar el amor que las mujeres puedan sentir por sí mismas, valorando cada detalle que se les brinda.
-                </p>
-                
-            </article>
-            <div class="rey">
-                <article class="principal">
-                    <h2 class="pricipal__segundo">concurso de moda</h2>
-                    <p class="pricipal__tercero">Gran concurso que se estara realizando por instagram; animate, gana y llevate una gran sorpresa. </p>
-                    <img  class="pricipal__cuarto--d0" src="imagen/Live-4.png" alt="Live-4">
-                    <p class="pricipal__tercero">Se realizara un post en facebook e instagram donde los participantes tendrán que seguir cada paso que se le pide y así poder estar dentro del concurso #AmaComoEres.</p>
-                </article>
+
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide carrusel" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/slaider1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slaider2.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slaider3.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+   
+
+  
+
+    <section id="alfa" >
+        <article class="home">
     
-                <article class="principal" >
-                    <h2  class="pricipal__segundo">pasarela en vivo</h2>
-                    <p  class="pricipal__tercero">disfruta del mejor evento del año, podras disfrutarlo en vivo atravez de nuestra plataforma y redes sociales</p> 
-                    <img class="pricipal__cuarto--d0" src="imagen/EC3 Amate shop.png" alt="EC3">
-                    <p  class="pricipal__tercero">Se hará una transmisión en vivo (Facebook) donde se mostrará las nuevas prendas en tendencia de Amate shop. 
-                    </p>
-                </article>
-            </div>    
-            
-        </section>
-        
-        <footer id="footer">
+            <p class="home-1"> Ámate Shop es una marca de ropa auténtica con una personalidad diferente y
+                transparente, la cual transmite toda la seguridad y comodidad a quienes usan las prendas. Dedicamos la mayor
+                parte de nuestro tiempo a reflejar el amor que las mujeres puedan sentir por sí mismas, valorando cada
+                detalle que se les brinda.
+            </p>
+    
+        </article >
+        <div class="condominio">
+            <article class="casa-1">
+                <h2 class="casa-2">concurso de moda</h2>
+                <p class="cas-3">Gran concurso que se estara realizando por instagram; animate, gana y llevate
+                    una gran sorpresa. </p>
+                <img class="casa-4" src="img/Live-4.png" alt="Live-4">
+                <p class="casa-5">Se realizara un post en facebook e instagram donde los participantes tendrán que seguir cada paso que se le pide y así poder estar dentro del concurso #AmaComoEres.</p>
+            </article>
+    
+            <article class="casa-1">
+                <h2 class="casa-2">pasarela en vivo</h2>
+                <p class="casa-3">disfruta del mejor evento del año, podras disfrutarlo en vivo atravez de
+                    nuestra plataforma y redes sociales</p>
+                <img class="casa-4" src="img/EC3 Amate shop.png" alt="EC3">
+                <p class="casa-5">Se hará una transmisión en vivo (Facebook) donde se mostrará las nuevas prendas
+                    en tendencia de Amate shop.
+                </p>
+             </article>
 
-            <nav>
-                <ul>
-                    <li><a href="#inicio">regresar al inicio</a></li> 
-                    <br>
-                    <li><a href="https://web.facebook.com/AmateShopp" target="_blank">conoce mas de mi</a></li>
-                    <br>
-                    <li><a href="https://www.instagram.com/amateshopperu/" target="_blank">inspirate</a></li>
-                </ul>
-                
-            </nav>
+        </div>
             
-        </footer>
-    </div>
- 
-      
+        
+    </section>
+
+
+
+
+    <footer id="footer">
+        <nav>
+            <ul>
+                <li><a href="#inicio">regresar al inicio</a></li> 
+                <br>
+                <li><a href="https://web.facebook.com/AmateShopp" target="_blank">conoce mas de mi</a></li>
+                <br>
+                <li><a href="https://www.instagram.com/amateshopperu/" target="_blank">inspirate</a></li>
+            </ul>
+            
+        </nav>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> 
+
+
+
+
 </body>
 </html>

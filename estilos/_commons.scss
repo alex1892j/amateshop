@@ -1,0 +1,53 @@
+//variables
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor{
+    background: linear-gradient(to left, #b1eaf0 0%, #ffffff 60%, #f0cef1 100%);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(7,auto);
+    grid-template-areas: 
+    
+    "inicio"
+    "carrucel"
+    "alfa"
+    "bravo"
+    "mega"
+    "charli"
+    "footer"
+
+    ;
+}
+
+$ancho-total: 90%;
+$largo-total: 300px;
+$margen: 20px; 
+
+$color-1: #4d4d4d;
+$color-2: #3abfcc;
+$color-3: #d7a6d9;
+$color-4: #ffffff;
+
+.boton {
+    background-color: $color-3;
+    color: $color-1 ;
+    border-radius: 28px;
+    border: 1px solid $color-4;
+    display: block;
+    position: relative;
+    width: 200px;
+    cursor: pointer;
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: none;
+
+
+    &:hover {
+        background-color: $color-2;
+     }
+ }
