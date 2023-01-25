@@ -4,50 +4,33 @@
 
 .menu{
     background: linear-gradient(to left, #b1eaf0 0%, #ffffff 60%, #f0cef1 100%); 
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: 40px;
     
+    
+
+    ul li ul li a{
+        display: block;
+        background: transparent linear-gradient(to left, #b1eaf0 0%, #ffffff 60%, #f0cef1 100%); 
+        color: c.$color-1;
+        font-style: oblique;
+       
+        
+        
+    
+    
+        &:hover{
+            display: block;
+            color:  c.$color-2 ;
+            font-style: oblique;
+        }
+    }
+
+    .menu ul li:hover ul{
+        display: block;
+        
+    }
  }
- 
- .menu ul{
-     list-style: none;
-     height: 20px;
- }
- 
- .menu ul li{
-     font-weight: bold;
-     display: inline-block;
-     position: relative;
- }
- 
- .menu ul li:hover ul{
-     display: block;
-     
- }
- 
- .menu ul li:hover ul li a{
-     display: block;
-     background-color: #ffffff;
-     color: #3abfcc;
- }
- 
- .menu ul li ul li a:hover{
-     color: #4d4d4d;
- }
- 
- .menu ul li a{
-     color:black ;
-     text-decoration: none;
-     font-family: 'Barlow', sans-serif;
- }
- 
- .menu ul li a:hover{
-     color:#3abfcc;
- }
- 
- .menu ul ul{
-     position: absolute;
-     display: none;
- }
- 
- .menu ul ul li{
-     display: flex;
- }
+  
+
+

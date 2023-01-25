@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(7, auto);
-  grid-template-areas: "inicio" "carrucel" "alfa" "bravo" "mega" "charli" "footer";
+  grid-template-areas: "inicio" "alfa" "bravo" "mega" "charli" "footer";
 }
 
 .boton {
@@ -35,7 +35,11 @@
 }
 
 .logo {
-  width: 100px;
+  width: 80px;
+}
+.logo:hover {
+  padding: 10px;
+  transform: translate3d(30deg);
 }
 
 #inicio {
@@ -45,13 +49,10 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: 20vh;
 }
 
-#carrucel {
-  grid-area: carrucel;
-}
-
-@media only screen and (min-width: 300px) {
+@media only screen and (min-width: 200px) {
   #alfa {
     grid-area: alfa;
     display: flex;
@@ -62,6 +63,10 @@
     padding-top: 5%;
   }
   #alfa .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     height: auto;
     border: double 5px #4d4d4d;
@@ -69,6 +74,12 @@
   #alfa .home .home-1 {
     text-align: center;
     margin: 5px;
+  }
+  #alfa .home .home-2 {
+    width: 50%;
+    margin: 20px;
+    text-align: center;
+    background-color: #3abfcc;
   }
   #alfa .condominio {
     width: 90%;
@@ -251,75 +262,50 @@
   grid-area: footer;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
   font-family: "Barlow", sans-serif;
-  padding-top: 8%;
 }
-
 #footer nav {
-  width: 90%;
-  background-color: #4d4d4d;
+  width: 100%;
+  background-color: #ffffff;
   margin: 10px;
+  padding-top: 20px;
 }
-
 #footer nav ul li {
   font-weight: bold;
   display: flex;
   justify-content: space-evenly;
 }
-
 #footer nav ul li a {
-  color: #ffffff;
+  color: #4d4d4d;
   text-decoration: none;
+}
+#footer nav ul li a svg {
+  width: 30px;
+  height: 30px;
+  color: blue;
 }
 
 .menu {
   background: linear-gradient(to left, #b1eaf0 0%, #ffffff 60%, #f0cef1 100%);
-}
-
-.menu ul {
-  list-style: none;
-  height: 20px;
-}
-
-.menu ul li {
-  font-weight: bold;
-  display: inline-block;
-  position: relative;
-}
-
-.menu ul li:hover ul {
-  display: block;
-}
-
-.menu ul li:hover ul li a {
-  display: block;
-  background-color: #ffffff;
-  color: #3abfcc;
-}
-
-.menu ul li ul li a:hover {
-  color: #4d4d4d;
-}
-
-.menu ul li a {
-  color: black;
-  text-decoration: none;
   font-family: "Barlow", sans-serif;
+  margin-bottom: 40px;
 }
-
-.menu ul li a:hover {
+.menu ul li ul li a {
+  display: block;
+  background: transparent linear-gradient(to left, #b1eaf0 0%, #ffffff 60%, #f0cef1 100%);
+  color: #4d4d4d;
+  font-style: oblique;
+}
+.menu ul li ul li a:hover {
+  display: block;
   color: #3abfcc;
+  font-style: oblique;
 }
-
-.menu ul ul {
-  position: absolute;
-  display: none;
-}
-
-.menu ul ul li {
-  display: flex;
+.menu .menu ul li:hover ul {
+  display: block;
 }
 
 @media only screen and (min-width: 250px) {
@@ -444,6 +430,7 @@
   border: solid 5px #4d4d4d;
   width: 90%;
   padding-top: 30px;
+  margin: 80px;
 }
 .formulario form {
   width: 70%;
